@@ -33,7 +33,7 @@ func resourceDatabaseRole() *schema.Resource {
 			"privilege": {
 				Type:     schema.TypeSet,
 				Optional: true,
-				MaxItems: 10,
+				MaxItems: 25,
 				Elem: &schema.Resource{
 					Schema: map[string]*schema.Schema{
 
